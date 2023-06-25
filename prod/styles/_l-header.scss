@@ -1,0 +1,64 @@
+@use './h-colors' as c ;
+@use './h-fonts' as f ;
+
+
+
+
+.header{
+    background: url(../../public/images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+    padding: 130px 160px 75px;
+    & .logo{
+        display: block;
+        margin: auto;
+        margin-bottom: 55px;
+    }
+}
+
+
+.header p{
+    font-size: f.$fontsizep1;
+    margin-bottom: 50px !important;
+    line-height: 1.5;
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
+}
+
+.header .btn{
+    text-align: center;
+}
+
+.header .btn .bttn{
+    font-size: f.$fontsize;
+    letter-spacing: 1px;
+    font-weight: f.$fontWeight400;
+    padding: 15px 35px;
+    color: c.$c-white;
+    border-radius: 10em;
+    border-bottom: 4px solid;
+    background-color: c.$c-StrongCyan;
+    margin-right: 10px;
+    border-color: c.$c-StrongCyan;
+    box-shadow: 0 10px 30px -5px c.$c-StrongCyan;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+.header .btn .bttn2{
+    font-size: f.$fontsize;
+    letter-spacing: 1px;
+    font-weight: f.$fontWeight400;
+    padding: 15px 35px;
+    color: c.$c-white;
+    border-radius: 10em;
+    border-bottom: 4px solid;
+    background-color: c.$c-LightBlue;
+    margin-right: 10px;
+    border-color: c.$c-LightBlue;
+    box-shadow: 0 10px 30px -5px c.$c-LightBlue;
+    &:hover{
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,38 @@
+@use './h-fonts' as f ;
+@use './h-colors' as c ;
+
+html{
+    font-family: f.$font-family;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    color: c.$c-DarkGray;
+    font-weight: f.$fontWeight600;
+}
+
+h1{
+    font-size: f.$fontsizeh1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: f.$fontsizeh2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: f.$fontsizeh3;
+}
+
+p{
+    color: c.$c-GrayishBlue;
+    font-size: f.$fontsize;
+    line-height: 1.7;
+}
