@@ -154,3 +154,54 @@
         opacity: 0.9;
     }
 }
+
+.contenedor{
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .main .keep{
+        padding: 75px 80px;
+    }
+
+    .main .cont-img{
+        flex-direction: column;
+    }
+
+    .main .cont-img .img-computer{
+        width: 100%;
+    }
+
+    .main .cont-img .img-computer img{
+        width: 60%;
+        margin: auto;
+        transform: translateX(0);
+    }
+    
+    .main .cont-img .card-group{
+        width: 100%;
+        padding: 70px 0 0;
+        text-align: center;
+    }
+
+    .main .cont-img .card-group .card p{
+        margin: auto;
+    }
+    
+    .main .access img{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px ){
+    .main .download .btn .bttn{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .main .download .btn .bttn2{
+        margin-right: 0;
+    }
+}

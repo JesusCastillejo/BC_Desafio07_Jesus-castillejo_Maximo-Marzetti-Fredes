@@ -1,0 +1,63 @@
+@use './h-colors' as c ;
+@use './h-fonts' as f ;
+
+footer {
+    padding: 45px;
+    background-color: c.$c-footer-bg;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+
+    .logo-footer{
+        width: 55px;
+    }
+
+    .links{
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(120px, 120px));
+        grid-gap: 20px 70px;
+        a {
+            font-size: 18px;
+            font-weight: 500;
+            color: c.$c-DarkGray;
+        }
+        a:hover {
+            color: c.$c-StrongCyan;
+        }
+    }
+    
+    .social-links{
+    display: flex;
+    gap: 20px;
+        img{
+        font-size: 27px;
+        }
+        img:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    footer .links{
+        grid-template-columns: repeat(2, minmax(120px, 120px));
+        grid-gap: 20px 40px;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media screen and (max-width: 768px ){
+    footer{
+        grid-template-columns: 1fr;
+        place-items: center;
+        grid-gap: 50px 0;
+    }
+
+    footer .social-links{
+        place-self: center;
+    }
+}
+

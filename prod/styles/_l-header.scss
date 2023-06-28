@@ -62,3 +62,13 @@
         opacity: 0.9;
     }
 }
+
+@media screen and (max-width: 768px ){
+    .header .btn .bttn{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .header .btn .bttn2{
+        margin-right: 0;
+    }
+}
